@@ -3,7 +3,7 @@ package lista.Operacoesbasicas;
 public class Tarefa {
 
     //atributo
-    private String descricao;
+    private final String descricao;
 
     public Tarefa(String descricao) {
         this.descricao = descricao;
@@ -13,6 +13,7 @@ public class Tarefa {
         return descricao;
     }
 
+    @Override
     public String toString() {
         return descricao;
     }

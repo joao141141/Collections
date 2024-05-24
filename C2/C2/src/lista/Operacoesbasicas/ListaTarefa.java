@@ -40,12 +40,12 @@ public class ListaTarefa {
 
         listaTarefa.adicionarTarefa("Tarefa 1");
         System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
-        
+
         listaTarefa.adicionarTarefa("Tarefa 1");
         System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.adicionarTarefa("Tarefa 2");
-        System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas()); 
+        System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
         listaTarefa.removerTarefa("Tarefa 2");
         System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
@@ -53,7 +53,6 @@ public class ListaTarefa {
         listaTarefa.obterDescricoesTarefas();
         listaTarefa.removerTarefa("Tarefa 1");
         System.out.println("O numero Total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
-
 
     }
 }
