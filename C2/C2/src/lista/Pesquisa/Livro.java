@@ -23,4 +23,12 @@ public class Livro {
     public int getanoPublicacao() {
         return anoPublicacao;
     }
+
+    public String toString() {
+        return "Livro{"
+                + "titulo='" + titulo + '\''
+                + ", autor='" + autor + '\''
+                + ", anoPublicacao=" + anoPublicacao
+                + '}';
+    }
 }

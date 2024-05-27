@@ -53,4 +53,21 @@ public class CatalogoLivros {
         }
         return livroPorTitulo;
     }
+
+    public static void main(String[] args) {
+        CatalogoLivros catalogoLivros = new CatalogoLivros();
+
+        // Adicionando livros ao catálogo
+        catalogoLivros.adicionarLivro("Microsserviços Prontos Para a Produção", "Susan J. Fowler", 2017);
+        catalogoLivros.adicionarLivro("Java Guia do Programador", "Peter Jandl Junior", 2021);
+        catalogoLivros.adicionarLivro("Código Limpo", "Robert C. Martin", 2009);
+        catalogoLivros.adicionarLivro("O Codificador Limpo", "Robert C. Martin", 2012);
+
+        // Pesquisando por autor
+        System.out.println(catalogoLivros.pesquisarPorAutor("Robert C. Martin"));
+
+        System.out.println(catalogoLivros.pesquisarPorIntervaloDeAnos(2010, 2020));
+
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Microsserviços Prontos Para a Produção"));
+    }
 }
