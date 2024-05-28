@@ -1,11 +1,9 @@
 package Maps3;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
-import java.time.LocalDate;
 import java.util.TreeMap;
-import java.util.Set;
-import java.util.Collection;
 
 public class AgendaEventos {
 
@@ -17,7 +15,7 @@ public class AgendaEventos {
 
     public void adicionarEvento(LocalDate data, String nome, String atracao) {
         Evento evento = new Evento(nome, atracao);
-        eventosMap.put(data, Evento);
+        eventosMap.put(data, evento);
     }
 
     public void exibirAgenda() {
@@ -51,6 +49,9 @@ public class AgendaEventos {
         agendaEventos.adicionarEvento(LocalDate.of(2024, 6, 9), "Formula 1: Vietnam Grand Prix", "Hanoi Street Circuit, Hanoi");
         agendaEventos.adicionarEvento(LocalDate.of(2024, 6, 23), "Formula 1: Chinese Grand Prix", "Shanghai International Circuit, Shanghai");
         agendaEventos.adicionarEvento(LocalDate.of(2024, 6, 30), "Formula 1: Dutch Grand Prix", "Circuit Zandvoort, Zandvoort");
+
+        agendaEventos.exibirAgenda();
+        agendaEventos.obterproximoevento();
     }
 
 }
